@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+
+
+html *{
+    
+    font-family: georgia;
+    background-color: white;
+}
+
+p, h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+#fixed_banner_wrapper{
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+}
+
+#fixed_banner_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    padding-left: 25px;
+    padding-bottom: 6px;
+    box-shadow: rgba(0,0,0,0.08) 0 0 5px 1px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+#header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    padding-left: 25px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: white;
+    z-index: 0;
+}
+
+#header_container > div{
+    font-size: 30px;
+}
+
+#nyt_title > img{
+    width: 280px;
+    height: 40px;
+
+}
+
+.fa-bars{
+    font-size: 18px !important;
+}
+h1 h2 h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#subheader_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#subheader_container * {
+    margin:10px 0px 5px 5px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+#log_in_link{
+    border-left: 1px solid #e2e2e2;
+    padding-left: 5px;
+    padding-right:20px;
+}
+
+a{
+    color:rgb(50, 104, 145);
+}
+
+#image_wrapper{
+    background-color:white;
+}
+
+#image_wrapper h1{
+    display: inline-block;
+    margin: 30px 83px 30px 83px;
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 750;
+    z-index:1;
+}
+
+#image_wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+.header_img_caption_container{
+    display:flex;
+    flex-direction: column;
+    margin: 10px 25px 0px 25px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #666;
+}
+
+.attribution{
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.article_footer{
+    opacity: 0.6;
+    font-size:0.9rem;
+}
+
+#article_wrapper{
+    width: 75%;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    z-index:-2;
+    position: relative;
+}
+
+#author_container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#author{
+    margin-bottom:15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#author > a{
+    color:black;
+    text-decoration: underline;
+}
+
+#date_and_links_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_caption{
+    margin-bottom:40px;
+
+}
+.img_caption_line{
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 60px; 
+}
+
+.article_image{
+    display:flex;
+    flex-direction: column;
+    font-size:1.1rem;
+}
+
+.img_caption_container{
+    display:flex;
+    flex-direction: column;
+}
+
+#comments_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+    
+.comments_link{
+    font-size: 1rem;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    border: 1px solid #326891;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.5rem;
+    padding: 10px 100px 10px 100px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #6288a5;
+    -webkit-transition: background-color .6s ease;
+    transition: background-color .6s ease;
+}
+
+.newsletter_signup{
+    display:flex;
+    margin-top: 50px;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);
+}
+
+.newsletter_signup > *{
+    padding-top:22px;
+    padding-bottom: 60px;
+    padding-right:30px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    line-height: 1.8rem;
+}
+
+#footer{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#footer a{
+    color:black;
+}
+
+#footer div{
+    font-size: 1.3rem;
+    margin-bottom:10px;
+    color: rgb(102, 102, 102);
+}
+#footer h3{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom:15px;
+}
+
+#signup_wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+#signup_form{
+    display:flex;
+}
+
+#signup_form button{
+    font-size: 1rem;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    border: 1px solid #326891;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.5rem;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #6288a5;
+    flex:1;
+}
+
+#signup_form input{
+    font-size: 1rem;
+    flex: 2;
+}
+
+#signup_wrapper > *{
+    color: rgb(153, 153, 153);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8125rem;
+    margin: 5px 0px;
+}
+
+.newsletter_signup > *{
+    flex: 1;
+}
